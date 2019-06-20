@@ -32,6 +32,62 @@ relacionados con las aplicaciones web, pero no deben tener acceso al resto de
 recursos. Cualquiera de los usuarios de los tres grupos debe poder resetear sus propias
 contraseñas y estas deben sincronizarse en el directorio activo on-premises.
 
+Desde el portal de Azure, en el Tenant de Azure Mad.com nos descargamos Azure AD Connect y lo instalamos en nuestra maquina On-premises
+
 <p align="center">
 <a><img src="https://i.imgur.com/nivlvkY.png" tittle="recurso" /></a>
+</p>
+
+<p align="center">
+<a><img src="https://i.imgur.com/c75IGU8.png" tittle="recurso" /></a>
+</p>
+
+Utilizamos Password Hash Synchronization porque es el único que nos permite habilitar Password Writeback y en el ejercicio se nos pide sincronizar entre el directorio de Azure y el directorio On-premises.
+
+<p align="center">
+<a><img src="https://i.imgur.com/DRMmWp9.png" tittle="recurso" /></a>
+</p>
+
+Nos pedirá un usuario de Azure, así que creamos uno que tenga permisos de administrador global dentro del tenant.
+
+<p align="center">
+<a><img src="https://i.imgur.com/v9N06aq.png" tittle="recurso" /></a>
+</p>
+
+<p align="center">
+<a><img src="https://i.imgur.com/v9N06aq.png" tittle="recurso" /></a>
+</p>
+
+Despues de identificarnos con el usuario nos aparece el dominio local mat.com ,nos pedirá una cuenta de AD que tenga los permisos necesarios para poder hacer la sincronización periodica, asi que le ponemos la cuenta del administrador local.
+
+<p align="center">
+<a><img src="https://i.imgur.com/dTj4ZyO.png" tittle="recurso" /></a>
+</p>
+
+Utilizamos la cuenta de administrador del dominio (Enterprise).
+
+<p align="center">
+<a><img src="https://i.imgur.com/XYKtONF.png" tittle="recurso" /></a>
+</p>
+
+<p align="center">
+<a><img src="https://i.imgur.com/yCBYZTQ.png" tittle="recurso" /></a>
+</p>
+
+Ahora tenemos que añadir el UPN en la maquina On-premises DC-1, para los usuarios de madt38w06.
+
+<p align="center">
+<a><img src="https://i.imgur.com/J3uniTI.png" tittle="recurso" /></a>
+</p>
+
+Ahora todos los usuario tendrán el UPN alternativo.
+
+<p align="center">
+<a><img src="https://i.imgur.com/EFF7Bnb.png" tittle="recurso" /></a>
+</p>
+
+Refrescamos y vemos que ya nos aparece el UPN que hemos creado.
+
+<p align="center">
+<a><img src="https://i.imgur.com/z6yvrgL.png" tittle="recurso" /></a>
 </p>
