@@ -34,5 +34,5 @@ recursos. Cualquiera de los usuarios de los tres grupos debe poder resetear sus 
 contraseñas y estas deben sincronizarse en el directorio activo on-premises.
 
 <p align="center">
-<a><img src="https://www.flickr.com/photos/166278058@N03/48096960643/in/dateposted-public/" tittle="recurso" /></a>
+<a><img src="https://imgur.com/a/b9xfXR6" tittle="recurso" /></a>
 </p>
