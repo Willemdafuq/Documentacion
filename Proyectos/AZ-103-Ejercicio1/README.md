@@ -32,3 +32,7 @@ de desarrollo sólo deben tener permisos de lectura y modificación sobre los re
 relacionados con las aplicaciones web, pero no deben tener acceso al resto de
 recursos. Cualquiera de los usuarios de los tres grupos debe poder resetear sus propias
 contraseñas y estas deben sincronizarse en el directorio activo on-premises.
+
+<p align="center">
+<a><img src="https://www.flickr.com/photos/166278058@N03/48096960643/in/dateposted-public/" tittle="recurso" /></a>
+</p>
